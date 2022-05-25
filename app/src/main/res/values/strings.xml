@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Listmarker</string>
+    <string name="action_about">About</string>
+    <string name="name_of_list">What is the name of your list?</string>
+    <string name="create_list">Create</string>
+    <string name="about_title" translatable="false">Listmarker %1$s</string>
+    <string name="about_message">Created by MoolCooV</string>
+</resources>

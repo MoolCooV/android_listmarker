@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_of_list">Какое название у вашего списка?</string>
+    <string name="create_list">Создать</string>
+    <string name="action_about">О приложении</string>
+    <string name="about_message">Cоздатель: MoolCooV</string>
+</resources>
