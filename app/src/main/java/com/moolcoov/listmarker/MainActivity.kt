@@ -10,21 +10,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.moolcoov.listmarker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
     private lateinit var listsRecyclerView: RecyclerView
     private lateinit var fabBtn: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.toolbar)
 
         fabBtn = findViewById(R.id.fab)
         fabBtn.setOnClickListener { showCreateListDialog() }
@@ -49,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showInfo() {
-        val dialogTitle = getString(R.string.about_title, BuildConfig.VERSION_NAME)
+        val dialogTitle = getString(R.string.about_title)
         val dialogMessage = getString(R.string.about_message)
 
         val builder = AlertDialog.Builder(this)
